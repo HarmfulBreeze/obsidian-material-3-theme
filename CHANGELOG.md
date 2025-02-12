@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.2...v1.0.3) (2025-02-12)
+
+
+### Bug Fixes
+
+* add checkout action before artifact upload ([441de34](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/441de34846fae1b9fa339a815f75179bdf3a1958))
+
 ## [1.0.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.1...v1.0.2) (2025-02-12)
 
 
