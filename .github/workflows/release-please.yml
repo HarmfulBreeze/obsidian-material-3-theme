@@ -22,4 +22,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
-        run: gh release upload ${{ steps.release.outputs.tag_name }} ./manifest.json ./theme.css
+        run: |
+          ls
+          gh release upload ${{ steps.release.outputs.tag_name }} ./artifact/manifest.json ./artifact/theme.css
