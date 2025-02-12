@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.0...v1.0.1) (2025-02-12)
+
+
+### Bug Fixes
+
+* use regular switch for mod-small ([67e6847](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/67e684778ada07fe0a1fa97bb9a2b224125a5617))
+
 ## 1.0.0 (2025-02-12)
 
 
