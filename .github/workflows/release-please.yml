@@ -18,10 +18,10 @@ jobs:
         with:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
           release-type: node
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
       - name: Upload release artifacts
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
-        run: |
-          ls
-          gh release upload ${{ steps.release.outputs.tag_name }} ./artifact/manifest.json ./artifact/theme.css
+        run: gh release upload ${{ steps.release.outputs.tag_name }} ./manifest.json ./theme.css
