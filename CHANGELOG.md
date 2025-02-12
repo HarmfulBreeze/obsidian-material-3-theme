@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.1...v1.0.2) (2025-02-12)
+
+
+### Bug Fixes
+
+* artifact upload fix? ([91fc3a4](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/91fc3a421f7f3626a1a5c6b2ed08a1eef3d7ed6f))
+
 ## [1.0.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.0...v1.0.1) (2025-02-12)
 
 
