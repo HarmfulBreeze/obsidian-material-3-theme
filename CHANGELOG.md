@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/obsidian-material-3-theme-v1.0.0...obsidian-material-3-theme-v1.0.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* add checkout action before artifact upload ([ea95378](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/ea95378d0342e723953ef31b829dda4f766c3344))
+* artifact upload fix? ([ea95378](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/ea95378d0342e723953ef31b829dda4f766c3344))
+* use regular switch for mod-small ([ea95378](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/ea95378d0342e723953ef31b829dda4f766c3344))
+
 ## 1.0.0 (2025-02-12)
 
 
