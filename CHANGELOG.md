@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.1...v1.1.0) (2025-02-17)
+
+
+### Features
+
+* set text normal color ([8d211d9](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/8d211d985f281f34b418d061c3e2257ddf98cac0))
+* theme icon buttons ([c66204d](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/c66204d05df0ec86f1c628779d2fd1ff38765f08))
+
+
+### Bug Fixes
+
+* use different color role for --background-modifier-hover ([2f28bab](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/2f28bab6eadb31e2b3b29215fe5d2e8b20bb198b))
+
 ## [1.0.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.0...v1.0.1) (2025-02-13)
 
 
