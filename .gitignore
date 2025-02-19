@@ -16,6 +16,4 @@ node_modules/
 
 # Sass
 .sass-cache/
-
-_app.css
-m3/
+theme.css
