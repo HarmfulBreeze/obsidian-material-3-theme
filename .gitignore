@@ -1,18 +1,21 @@
 # vscode
-.vscode 
+.vscode/
 
 # Intellij
 *.iml
-.idea
+.idea/
 
 # npm
-node_modules
+node_modules/
 
 # Exclude sourcemaps
 *.map
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
+
+# Sass
+.sass-cache/
 
 _app.css
 m3/
