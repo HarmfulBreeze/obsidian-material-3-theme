@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.1.0...v1.2.0) (2025-02-19)
+
+
+### Features
+
+* remove box-shadow from active/focused inputs ([52adda5](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/52adda53e6bc5d2a2ed622583dde42bf0e0383bc))
+* set border anim on hover for inputs/textareas ([a320f5f](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/a320f5fda6f53b663cb2f2eb1f4234d2884bafd0))
+* theme .pdf-page-input.mod-page-loading ([1a40e8d](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/1a40e8d3f3d1a38a0b686664cbf0071ea525f164))
+* theme search inputs ([8669fcb](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/8669fcbf3805097548993d458f0bd02eb68888e3))
+
+
+### Bug Fixes
+
+* use better CSS selectors for text fields ([0eac11b](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/0eac11b65bfcdb799a1d9f5e740b8f37f7677da4))
+
 ## [1.1.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.0.1...v1.1.0) (2025-02-17)
 
 
