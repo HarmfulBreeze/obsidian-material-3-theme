@@ -1,0 +1,526 @@
+@use 'fonts';
+@use 'tokens';
+
+.theme-light,
+.theme-dark {
+	/* Accent color */
+	--color-accent: var(--md-sys-primary);
+	--color-accent-hsl: var(--md-sys-primary-hsl);
+
+	/* Backgrounds */
+	--background-primary: var(--md-sys-surface);
+	--background-primary-alt: var(--md-sys-surface-container-low);
+	--background-secondary: var(--md-sys-surface-container);
+	--background-secondary-alt: var(--md-sys-surface-container-highest);
+
+	/* This should be replaced by a state layer as much as possible. */
+	--background-modifier-hover: rgba(
+		from var(--md-sys-on-surface-variant) r g b /
+			var(--md-sys-state-hover-state-layer-opacity)
+	);
+
+	--background-modifier-border: var(--md-sys-outline-variant);
+
+	/* Obsidian uses a darker tone for the following.
+	 * It should be OK to use Outline Variant for both.
+	 */
+	--background-modifier-border-hover: var(--md-sys-outline-variant);
+	--background-modifier-border-focus: var(--md-sys-outline-variant);
+
+	--background-modifier-error-rgb: var(--md-sys-error-rgb);
+	--background-modifier-error: var(--md-sys-error);
+	--background-modifier-error-hover: var(--md-sys-error);
+	--background-modifier-success-rgb: var(--md-extended-green-color-rgb);
+	--background-modifier-success: var(--md-extended-green-color);
+	--background-modifier-message: var(--md-sys-inverse-surface);
+	--background-modifier-form-field: var(--md-sys-surface-container-lowest);
+
+	/* Icons */
+	--icon-color-focused: var(--md-sys-on-surface-variant);
+
+	/* Nav items */
+	--nav-item-background-active: var(--md-sys-secondary-container);
+	--nav-item-color-active: var(--md-sys-on-secondary-container);
+
+	/* Interactive */
+	--interactive-normal: var(--md-sys-surface-container-highest);
+
+	/* FIXME: Using --background-modifier-hover, but this should be the color of the state layer,
+	 * not that of the container. More CSS will be needed for this.
+	 */
+	--interactive-hover: var(--background-modifier-hover);
+	--interactive-accent: var(--md-sys-primary);
+	--interactive-accent-hover: rgb(from var(--md-sys-primary) r g b / 0.9);
+
+	/* Scrollbars */
+	--scrollbar-active-thumb-bg: var(--md-sys-outline);
+	--scrollbar-bg: var(--md-sys-outline);
+	--scrollbar-thumb-bg: var(--md-sys-outline-variant);
+
+	/* Shadows */
+	--input-shadow: unset;
+	--shadow-s: unset;
+	--shadow-l: unset;
+
+	/* Sliders */
+	--slider-track-background: var(--md-sys-secondary-container);
+
+	/* Texts */
+	--text-normal: var(--md-sys-on-surface);
+	--text-accent: var(--md-sys-primary);
+	--text-on-accent: var(--md-sys-on-primary);
+	--text-faint: var(--md-sys-on-surface-variant);
+	--text-muted: var(--md-sys-on-surface-variant);
+
+	/* Undocumented */
+	/* For the scrim opacity, see https://github.com/material-components/material-components-android/issues/4295 */
+	--background-modifier-cover: rgba(from var(--md-sys-scrim) r g b / 0.32);
+}
+
+body {
+	/* Checkboxes (switches, actually) */
+	--checkbox-radius: 2px;
+
+	/* Dropdowns */
+	--dropdown-background-position: right 16px top 50%, 0 0;
+	--dropdown-background-size: 18px 18px;
+
+	/* Fonts */
+	--font-interface-theme: "Roboto";
+	--font-text-theme: "Roboto";
+
+	/* Icons */
+	--icon-opacity: 1;
+
+	/* Inputs */
+	/* TODO: Check this value */
+	--input-height: 40px;
+	--input-radius: var(--md-sys-shape-corner-extra-large);
+
+	/* Modals */
+	--modal-radius: var(--md-sys-shape-corner-medium);
+
+	/* Radiuses */
+	--radius-s: var(--md-sys-shape-corner-small);
+	--radius-m: var(--md-sys-shape-corner-medium);
+	--radius-l: var(--md-sys-shape-corner-large);
+
+	/* Sliders */
+	--slider-thumb-border-width: 0px;
+	--slider-thumb-radius: var(--md-sys-shape-corner-full);
+
+	/* Tabs */
+	--tab-radius-active: var(--md-sys-shape-corner-extra-small-top);
+}
+
+button {
+	padding: 0 24px 0 24px;
+}
+
+button:not(.clickable-icon) {
+	background-color: unset;
+	--text-color: var(--md-sys-primary);
+	outline: 1px solid var(--md-sys-outline);
+}
+
+button.mod-cta {
+	background-color: var(--md-sys-primary);
+	--text-color: var(--md-sys-on-primary);
+	outline: none;
+}
+
+button.mod-warning {
+	background-color: var(--background-modifier-error);
+	--text-color: var(--md-sys-on-error);
+	outline: none;
+}
+
+.checkbox-container,
+.checkbox-container.mod-small {
+	--switch-track-height: 32px;
+	--switch-track-width: 52px;
+	--switch-track-outline-color: var(--md-sys-outline);
+	--switch-track-outline-width: 2px;
+	--switch-track-selected-color: var(--md-sys-primary);
+	--switch-track-unselected-color: var(--md-sys-surface-container-highest);
+
+	height: var(--switch-track-height);
+	width: var(--switch-track-width);
+
+	box-shadow: unset;
+	background-color: var(--md-sys-surface-container-highest);
+	border: var(--switch-track-outline-width) solid
+		var(--switch-track-outline-color);
+	transition: box-shadow 0.15s ease-in-out;
+}
+
+.checkbox-container:hover,
+.checkbox-container.mod-small:hover {
+	box-shadow: unset;
+}
+
+.checkbox-container.is-enabled,
+.checkbox-container.mod-small.is-enabled {
+	background-color: var(--switch-track-selected-color);
+	border: 0;
+}
+
+.checkbox-container.is-enabled:hover,
+.checkbox-container.mod-small.is-enabled:hover {
+	box-shadow: unset;
+}
+
+.checkbox-container::after,
+.checkbox-container.mod-small::after {
+	--switch-handle-unselected-height: 16px;
+	--switch-handle-selected-height: 24px;
+	--switch-handle-pressed-height: 28px;
+	--switch-handle-unselected-width: 16px;
+	--switch-handle-selected-width: 24px;
+	--switch-handle-pressed-width: 28px;
+	--switch-handle-unselected-color: var(--md-sys-outline);
+	--switch-handle-selected-color: var(--md-sys-on-primary);
+	--switch-handle-unselected-outline-width: calc(
+		(40px / 2) - (var(--switch-handle-unselected-width) / 2)
+	);
+	--switch-handle-selected-outline-width: calc(
+		(40px / 2) - (var(--switch-handle-selected-width) / 2)
+	);
+	--switch-handle-pressed-outline-width: calc(
+		(40px / 2) - (var(--switch-handle-pressed-width) / 2)
+	);
+
+	height: var(--switch-handle-unselected-height);
+	width: var(--switch-handle-unselected-width);
+
+	background-color: var(--switch-handle-unselected-color);
+	margin: 6px 0 0 6px;
+	transform: unset;
+
+	/* TODO: Flutter uses Curves.easeOutBack, Compose doesn't have the bounce anim and uses springs instead. 
+	 * Need to pick one and apply it, if possible within this project's constraints.
+	 */
+	transition: margin 0.1s ease-in-out, width 0.1s ease-in-out,
+		height 0.1s ease-in-out;
+}
+
+.checkbox-container:hover::after,
+.checkbox-container.mod-small:hover::after {
+	background-color: var(--md-sys-on-surface-variant);
+
+	/* State layer emulation */
+	--state-layer-color: rgba(
+		from var(--md-sys-on-surface) r g b /
+			var(--md-sys-state-hover-state-layer-opacity)
+	);
+	outline: var(--switch-handle-unselected-outline-width) solid
+		var(--state-layer-color);
+}
+
+.checkbox-container:active::after,
+.checkbox-container.mod-small:active::after {
+	height: var(--switch-handle-pressed-height);
+	width: var(--switch-handle-pressed-width);
+
+	margin: 0;
+
+	/* State layer emulation */
+	--state-layer-color: rgba(
+		from var(--md-sys-on-surface) r g b /
+			var(--md-sys-state-pressed-state-layer-opacity)
+	);
+	outline: var(--switch-handle-pressed-outline-width) solid
+		var(--state-layer-color);
+}
+
+.checkbox-container.is-enabled::after,
+.checkbox-container.mod-small.is-enabled::after {
+	height: var(--switch-handle-selected-height);
+	width: var(--switch-handle-selected-width);
+
+	background-color: var(--switch-handle-selected-color);
+	margin: 4px 0 0 calc(52px - 24px - 4px);
+	transform: unset;
+}
+
+.checkbox-container.is-enabled:hover::after,
+.checkbox-container.mod-small.is-enabled:hover::after {
+	background-color: var(--md-sys-primary-container);
+
+	/* State layer emulation */
+	--state-layer-color: rgba(
+		from var(--md-sys-primary) r g b /
+			var(--md-sys-state-hover-state-layer-opacity)
+	);
+	outline: var(--switch-handle-selected-outline-width) solid
+		var(--state-layer-color);
+}
+
+.checkbox-container.is-enabled:active::after,
+.checkbox-container.mod-small.is-enabled:active::after {
+	height: var(--switch-handle-pressed-height);
+	width: var(--switch-handle-pressed-width);
+
+	left: revert;
+	margin: 2px 0 0 calc(52px - 24px - 6px);
+	transform: unset;
+
+	/* State layer emulation */
+	--state-layer-color: rgba(
+		from var(--md-sys-primary) r g b /
+			var(--md-sys-state-pressed-state-layer-opacity)
+	);
+	outline: var(--switch-handle-pressed-outline-width) solid
+		var(--state-layer-color);
+}
+
+.dropdown {
+	padding: 0 42px 0 24px;
+	outline: 1px solid var(--md-sys-outline);
+	background-color: unset;
+	color: var(--md-sys-primary);
+}
+
+.clickable-icon:hover {
+	background-color: unset;
+}
+
+.clickable-icon:focus-visible {
+	box-shadow: unset;
+	outline: unset;
+}
+
+.clickable-icon:active {
+	background-color: unset;
+}
+
+.clickable-icon::after {
+	/* Not using 40dp because not all icons are 24dp in Obsidian. */
+	--state-layer-base-color: var(--md-sys-on-surface-variant);
+	--state-layer-size: calc(40 * var(--icon-size) / 24);
+	content: "";
+	position: absolute;
+	width: var(--state-layer-size);
+	height: var(--state-layer-size);
+
+	border-radius: var(--md-sys-shape-corner-full);
+}
+
+.clickable-icon:hover::after {
+	background-color: rgb(
+		from var(--state-layer-base-color) r g b /
+			var(--md-sys-state-hover-state-layer-opacity)
+	);
+}
+
+.clickable-icon:focus-visible::after {
+	outline: var(--md-sys-state-focus-indicator-thickness) solid
+		var(--md-sys-secondary);
+	outline-offset: var(--md-sys-state-focus-indicator-offset);
+}
+
+.clickable-icon:active::after {
+	background-color: rgb(
+		from var(--state-layer-base-color) r g b /
+			var(--md-sys-state-pressed-state-layer-opacity)
+	);
+}
+
+.nav-file-title,
+.nav-folder-title {
+	border-radius: var(--radius-l);
+}
+
+input.pdf-page-input,
+.setting-item-control > textarea,
+.setting-item-control > input:not(.slider, [type="color"]) {
+	background: var(--md-sys-surface-container-highest);
+	border: unset;
+	border-bottom: 1px solid var(--md-sys-on-surface-variant);
+	border-radius: var(--md-sys-shape-corner-extra-small-top);
+	color: var(--md-sys-on-surface);
+	transition: border 0.15s var(--md-sys-motion-easing-standard);
+}
+
+input.pdf-page-input:not(.mod-page-loading):hover,
+.setting-item-control > textarea:hover,
+.setting-item-control > input:not(.slider, [type="color"]):hover {
+	border-bottom: 1px solid var(--md-sys-on-surface-variant);
+}
+
+input.pdf-page-input:not(.mod-page-loading):focus,
+.setting-item-control > textarea:focus,
+.setting-item-control > input:not(.slider, [type="color"]):focus {
+	border-bottom: 3px solid var(--md-sys-primary);
+}
+
+textarea:active,
+input.metadata-input-text:active,
+input[type="date"]:active,
+input[type="datetime-local"]:active,
+input[type="text"]:active,
+input[type="search"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
+textarea:focus,
+input.metadata-input-text:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+	box-shadow: unset;
+}
+
+.pdf-page-input.mod-page-loading {
+	/* Consider this is a disabled text field. */
+	background: rgb(from var(--md-sys-on-surface) r g b / 0.04);
+	color: rgb(from var(--md-sys-on-surface) r g b / 0.38);
+	border-bottom: 1px solid rgb(from var(--md-sys-on-surface) r g b / 0.38);
+}
+
+@media (hover: hover) {
+	textarea:hover,
+	input.metadata-input-text:hover,
+	input[type="date"]:hover,
+	input[type="datetime-local"]:hover,
+	input[type="text"]:hover,
+	input[type="search"]:hover,
+	input[type="email"]:hover,
+	input[type="password"]:hover,
+	input[type="number"]:hover {
+		transition: border 0.15s var(--md-sys-motion-easing-standard);
+	}
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	background: var(--md-sys-primary);
+	box-shadow: unset;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:active,
+body:not(.is-mobile)input[type="range"]:focus::-webkit-slider-thumb,
+body:not(.is-mobile) input[type="range"]:focus-visible::-webkit-slider-thumb {
+	background: var(--md-sys-primary);
+	box-shadow: unset;
+}
+
+.search-input-container {
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 8px;
+	gap: 8px;
+
+	background-color: var(--md-sys-surface-container-highest);
+	border-radius: var(--md-sys-shape-corner-full);
+}
+
+.search-input-container::before {
+	position: unset;
+	background-color: var(--md-sys-on-surface);
+}
+
+.search-input-container input {
+	padding: unset;
+	flex: 1;
+
+	background-color: unset;
+	border: unset;
+	border-radius: unset;
+	color: var(--md-sys-on-surface);
+}
+
+.search-input-container input::placeholder {
+	color: var(--md-sys-on-surface-variant);
+}
+
+.search-input-container .search-input-clear-button {
+	position: unset;
+	width: unset;
+	height: unset;
+	margin: unset;
+}
+
+.search-input-container .input-right-decorator {
+	position: unset;
+	transform: unset;
+	color: var(--md-sys-on-surface-variant);
+}
+
+.search-input-container.mod-hotkey .clickable-icon {
+	padding: unset;
+}
+
+.setting-hotkey {
+	border-radius: var(--md-sys-shape-corner-small);
+	background-color: var(--md-sys-secondary-container);
+	color: var(--md-sys-on-secondary-container);
+}
+
+.setting-hotkey-icon .svg-icon {
+	color: var(--md-sys-on-secondary-container);
+	opacity: 1;
+}
+
+.setting-hotkey.mod-empty {
+	outline: 1px solid var(--md-sys-outline-variant);
+	background-color: unset;
+	color: var(--md-sys-on-surface-variant);
+}
+
+.setting-hotkey-icon.mod-empty .svg-icon {
+	color: var(--md-sys-on-surface-variant);
+}
+
+@media (hover: hover) {
+	.setting-hotkey-icon:hover .svg-icon {
+		color: var(--md-sys-on-error);
+	}
+}
+
+@media (hover: hover) {
+	.setting-delete-hotkey:hover {
+		background-color: var(--background-modifier-error);
+		color: var(--md-sys-on-error);
+	}
+}
+
+.tooltip {
+	color: var(--md-sys-inverse-on-surface);
+}
+
+.tooltip.mod-error {
+	width: 200px;
+	background-color: var(--background-modifier-error);
+	color: var(--md-sys-on-error);
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
