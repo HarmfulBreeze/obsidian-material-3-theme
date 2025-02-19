@@ -1,5 +1,5 @@
-@use 'fonts';
-@use 'tokens';
+@use "fonts";
+@use "tokens";
 
 .theme-light,
 .theme-dark {
@@ -14,10 +14,7 @@
 	--background-secondary-alt: var(--md-sys-surface-container-highest);
 
 	/* This should be replaced by a state layer as much as possible. */
-	--background-modifier-hover: rgba(
-		from var(--md-sys-on-surface-variant) r g b /
-			var(--md-sys-state-hover-state-layer-opacity)
-	);
+	--background-modifier-hover: rgba(from var(--md-sys-on-surface-variant) r g b / var(--md-sys-state-hover-state-layer-opacity));
 
 	--background-modifier-border: var(--md-sys-outline-variant);
 
@@ -149,8 +146,7 @@ button.mod-warning {
 
 	box-shadow: unset;
 	background-color: var(--md-sys-surface-container-highest);
-	border: var(--switch-track-outline-width) solid
-		var(--switch-track-outline-color);
+	border: var(--switch-track-outline-width) solid var(--switch-track-outline-color);
 	transition: box-shadow 0.15s ease-in-out;
 }
 
@@ -180,15 +176,9 @@ button.mod-warning {
 	--switch-handle-pressed-width: 28px;
 	--switch-handle-unselected-color: var(--md-sys-outline);
 	--switch-handle-selected-color: var(--md-sys-on-primary);
-	--switch-handle-unselected-outline-width: calc(
-		(40px / 2) - (var(--switch-handle-unselected-width) / 2)
-	);
-	--switch-handle-selected-outline-width: calc(
-		(40px / 2) - (var(--switch-handle-selected-width) / 2)
-	);
-	--switch-handle-pressed-outline-width: calc(
-		(40px / 2) - (var(--switch-handle-pressed-width) / 2)
-	);
+	--switch-handle-unselected-outline-width: calc((40px / 2) - (var(--switch-handle-unselected-width) / 2));
+	--switch-handle-selected-outline-width: calc((40px / 2) - (var(--switch-handle-selected-width) / 2));
+	--switch-handle-pressed-outline-width: calc((40px / 2) - (var(--switch-handle-pressed-width) / 2));
 
 	height: var(--switch-handle-unselected-height);
 	width: var(--switch-handle-unselected-width);
@@ -209,12 +199,8 @@ button.mod-warning {
 	background-color: var(--md-sys-on-surface-variant);
 
 	/* State layer emulation */
-	--state-layer-color: rgba(
-		from var(--md-sys-on-surface) r g b /
-			var(--md-sys-state-hover-state-layer-opacity)
-	);
-	outline: var(--switch-handle-unselected-outline-width) solid
-		var(--state-layer-color);
+	--state-layer-color: rgba(from var(--md-sys-on-surface) r g b / var(--md-sys-state-hover-state-layer-opacity));
+	outline: var(--switch-handle-unselected-outline-width) solid var(--state-layer-color);
 }
 
 .checkbox-container:active::after,
@@ -225,12 +211,8 @@ button.mod-warning {
 	margin: 0;
 
 	/* State layer emulation */
-	--state-layer-color: rgba(
-		from var(--md-sys-on-surface) r g b /
-			var(--md-sys-state-pressed-state-layer-opacity)
-	);
-	outline: var(--switch-handle-pressed-outline-width) solid
-		var(--state-layer-color);
+	--state-layer-color: rgba(from var(--md-sys-on-surface) r g b / var(--md-sys-state-pressed-state-layer-opacity));
+	outline: var(--switch-handle-pressed-outline-width) solid var(--state-layer-color);
 }
 
 .checkbox-container.is-enabled::after,
@@ -248,12 +230,8 @@ button.mod-warning {
 	background-color: var(--md-sys-primary-container);
 
 	/* State layer emulation */
-	--state-layer-color: rgba(
-		from var(--md-sys-primary) r g b /
-			var(--md-sys-state-hover-state-layer-opacity)
-	);
-	outline: var(--switch-handle-selected-outline-width) solid
-		var(--state-layer-color);
+	--state-layer-color: rgba(from var(--md-sys-primary) r g b / var(--md-sys-state-hover-state-layer-opacity));
+	outline: var(--switch-handle-selected-outline-width) solid var(--state-layer-color);
 }
 
 .checkbox-container.is-enabled:active::after,
@@ -266,12 +244,8 @@ button.mod-warning {
 	transform: unset;
 
 	/* State layer emulation */
-	--state-layer-color: rgba(
-		from var(--md-sys-primary) r g b /
-			var(--md-sys-state-pressed-state-layer-opacity)
-	);
-	outline: var(--switch-handle-pressed-outline-width) solid
-		var(--state-layer-color);
+	--state-layer-color: rgba(from var(--md-sys-primary) r g b / var(--md-sys-state-pressed-state-layer-opacity));
+	outline: var(--switch-handle-pressed-outline-width) solid var(--state-layer-color);
 }
 
 .dropdown {
@@ -307,23 +281,16 @@ button.mod-warning {
 }
 
 .clickable-icon:hover::after {
-	background-color: rgb(
-		from var(--state-layer-base-color) r g b /
-			var(--md-sys-state-hover-state-layer-opacity)
-	);
+	background-color: rgb(from var(--state-layer-base-color) r g b / var(--md-sys-state-hover-state-layer-opacity));
 }
 
 .clickable-icon:focus-visible::after {
-	outline: var(--md-sys-state-focus-indicator-thickness) solid
-		var(--md-sys-secondary);
+	outline: var(--md-sys-state-focus-indicator-thickness) solid var(--md-sys-secondary);
 	outline-offset: var(--md-sys-state-focus-indicator-offset);
 }
 
 .clickable-icon:active::after {
-	background-color: rgb(
-		from var(--state-layer-base-color) r g b /
-			var(--md-sys-state-pressed-state-layer-opacity)
-	);
+	background-color: rgb(from var(--state-layer-base-color) r g b / var(--md-sys-state-pressed-state-layer-opacity));
 }
 
 .nav-file-title,
@@ -332,8 +299,8 @@ button.mod-warning {
 }
 
 input.pdf-page-input,
-.setting-item-control > textarea,
-.setting-item-control > input:not(.slider, [type="color"]) {
+.setting-item-control>textarea,
+.setting-item-control>input:not(.slider, [type="color"]) {
 	background: var(--md-sys-surface-container-highest);
 	border: unset;
 	border-bottom: 1px solid var(--md-sys-on-surface-variant);
@@ -343,14 +310,14 @@ input.pdf-page-input,
 }
 
 input.pdf-page-input:not(.mod-page-loading):hover,
-.setting-item-control > textarea:hover,
-.setting-item-control > input:not(.slider, [type="color"]):hover {
+.setting-item-control>textarea:hover,
+.setting-item-control>input:not(.slider, [type="color"]):hover {
 	border-bottom: 1px solid var(--md-sys-on-surface-variant);
 }
 
 input.pdf-page-input:not(.mod-page-loading):focus,
-.setting-item-control > textarea:focus,
-.setting-item-control > input:not(.slider, [type="color"]):focus {
+.setting-item-control>textarea:focus,
+.setting-item-control>input:not(.slider, [type="color"]):focus {
 	border-bottom: 3px solid var(--md-sys-primary);
 }
 
