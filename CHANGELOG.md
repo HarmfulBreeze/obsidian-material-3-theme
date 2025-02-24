@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.2.0...v1.2.1) (2025-02-24)
+
+
+### Bug Fixes
+
+* remove inline padding search inputs ([9c42457](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/9c424571864b232986f79d427e46bb8550de2f9b)), closes [#10](https://github.com/HarmfulBreeze/obsidian-material-3-theme/issues/10)
+
 ## [1.2.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.1.0...v1.2.0) (2025-02-19)
 
 
