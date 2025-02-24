@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.2.1...v1.2.2) (2025-02-24)
+
+
+### Bug Fixes
+
+* use relative positioning for .clickable-icon ([96f53ea](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/96f53eaa02bba722d965f42be16f5fd85433ada5)), closes [#12](https://github.com/HarmfulBreeze/obsidian-material-3-theme/issues/12)
+
 ## [1.2.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.2.0...v1.2.1) (2025-02-24)
 
 
