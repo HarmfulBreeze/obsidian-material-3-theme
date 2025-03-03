@@ -1,0 +1,27 @@
+.workspace-drawer {
+  background-color: var(--md-sys-surface-container);
+}
+
+.workspace-drawer-inner {
+  background-color: var(--md-sys-surface-container);
+}
+
+.workspace-drawer-active-tab-container {
+  background-color: var(--md-sys-surface-container);
+}
+
+.workspace-drawer-active-tab-header {
+  background-color: transparent;
+  border: 1px solid var(--md-sys-outline);
+  border-radius: var(--md-sys-shape-corner-full);
+  padding-inline: 24px;
+  height: 40px;
+
+  .workspace-drawer-active-tab-title, .workspace-drawer-active-tab-icon, .clickable-icon {
+    color: var(--md-sys-primary);
+  }
+
+  .clickable-icon {
+    padding: unset;
+  }
+}
