@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.2.2...v1.3.0) (2025-03-04)
+
+
+### Features
+
+* use Sass for building the theme ([#15](https://github.com/HarmfulBreeze/obsidian-material-3-theme/issues/15)) ([a08c780](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/a08c780015fd27d493849ddf876ec74258312de5))
+
 ## [1.2.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.2.1...v1.2.2) (2025-02-24)
 
 
