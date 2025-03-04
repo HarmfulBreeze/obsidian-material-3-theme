@@ -19,6 +19,14 @@ jobs:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
       - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
+      - uses: actions/setup-node@v4
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          node-version: 'lts/*'
+      - run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm run build
+        if: ${{ steps.release.outputs.release_created }}
       - name: Upload release artifacts
         if: ${{ steps.release.outputs.release_created }}
         env:
