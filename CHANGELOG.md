@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.3.1...1.4.0) (2025-03-05)
+
+
+### Features
+
+* theme bottom sheets ([cb69362](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/cb693621763ce26b4b0166f4beaa1bf9b688c7a2))
+* theme drawer action buttons ([a99370f](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/a99370f56da0f5b30245ebc668263b8f9386fec8))
+
+
+### Bug Fixes
+
+* **drawer:** use correct colors and set shape ([1b63b75](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/1b63b759503f2b450c39fd94c051555c7669c620))
+
 ## [1.3.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.3.0...1.3.1) (2025-03-05)
 
 
