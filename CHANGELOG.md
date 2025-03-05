@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.3.0...1.3.1) (2025-03-05)
+
+
+### Bug Fixes
+
+* theme download from Obsidian ([2f7cb47](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/2f7cb471ec5615e7e52654e1c03abd29629307e8))
+
 ## [1.3.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/v1.2.2...v1.3.0) (2025-03-04)
 
 
