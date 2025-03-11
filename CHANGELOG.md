@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.5.0...1.5.1) (2025-03-11)
+
+
+### Bug Fixes
+
+* fix button padding ([c2d2330](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/c2d2330111283cabbee2606362e6ed5f6d0ddb7e))
+
 ## [1.5.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.4.0...1.5.0) (2025-03-11)
 
 
