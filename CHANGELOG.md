@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.5.1...1.5.2) (2025-03-11)
+
+
+### Bug Fixes
+
+* **dropdown:** use 24x24 icon size ([bf43eab](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/bf43eab01666832688c4cdbccdecfd41fda7e1dc))
+
 ## [1.5.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.5.0...1.5.1) (2025-03-11)
 
 
