@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.5.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.4.0...1.5.0) (2025-03-11)
+
+
+### Features
+
+* integrate Material Web into the project ([95bf555](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/95bf555845710f679090c6344bf8583c7dfef38c))
+* **modal:** theme settings top bar ([f90aaea](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/f90aaea3931359cdb6526f1e3f4e4ba617fc1144))
+* theme modals ([3b99772](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/3b997725256c86f3d6a61040f0423748e88b6b25))
+
+
+### Bug Fixes
+
+* disable pointer-events on clickable-icon ([ce1e20f](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/ce1e20ff13ccb10c736a28244b8d04576d576fc1))
+* **drawer:** apply theming to all mobiles ([1efabe5](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/1efabe5239f2d6e6e636810c84645d890945fd6d))
+* **drawer:** fix action buttons alignment ([8afa266](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/8afa2663b59ee9eaf13b43941d80f481cde6169e))
+* **sheet:** use correct corner shape for info card ([b3eca59](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/b3eca5914b245cef0c3b8efd92ee35fe9e384413))
+
 ## [1.4.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.3.1...1.4.0) (2025-03-05)
 
 
