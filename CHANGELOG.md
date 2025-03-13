@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.5.2...1.6.0) (2025-03-13)
+
+
+### Features
+
+* add palette generation using Material Color Utilities ([974a458](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/974a458b9d47440ce4b2815321704efb0d20d0ad))
+
+
+### Bug Fixes
+
+* **colors:** replace palette with one generated using MCU ([c288d4e](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/c288d4ef38fe0519da482c0f85f6161e5ddc4a9e))
+
 ## [1.5.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.5.1...1.5.2) (2025-03-11)
 
 
