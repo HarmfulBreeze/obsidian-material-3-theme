@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.7.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.6.0...1.7.0) (2025-03-17)
+
+
+### Features
+
+* **main:** set unresolved link vars ([7398762](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/73987628c5c0f6d0f29723d45e700cbf7d494776))
+* **modal:** theme command palette ([ab011d4](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/ab011d4aed5f9dd8b212669d1f4954ffceb93626))
+* theme chips and huge refactoring ([ddd72e6](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/ddd72e66aaa93bbcce3f2140d3059c771040ae0b))
+
+
+### Bug Fixes
+
+* **modal:** enable command palette theming on phones ([efda6c9](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/efda6c9d3449db4b60a45270db1c5bd9cb142834))
+* **sheet:** adjust padding for bottom safe area ([a16e9fc](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/a16e9fc70d3ba7c022733b20b9f81e9941dcd8b5))
+
 ## [1.6.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.5.2...1.6.0) (2025-03-13)
 
 
