@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.7.0...1.7.1) (2025-03-17)
+
+
+### Bug Fixes
+
+* **modal:** remove command palette container border ([9763dfd](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/9763dfd4ae1a6586b9bbfb3544bbf3f604614d77))
+
 ## [1.7.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.6.0...1.7.0) (2025-03-17)
 
 
