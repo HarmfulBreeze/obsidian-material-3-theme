@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.7.1...1.7.2) (2025-03-18)
+
+
+### Bug Fixes
+
+* unset padding on global search bar ([3aaf09e](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/3aaf09ee00d9bff4e91f0df9538041b35cdcfbaf)), closes [#10](https://github.com/HarmfulBreeze/obsidian-material-3-theme/issues/10)
+
 ## [1.7.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.7.0...1.7.1) (2025-03-17)
 
 
