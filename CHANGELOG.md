@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.8.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.7.2...1.8.0) (2025-03-18)
+
+
+### Features
+
+* **drawer:** migrate to MWC token system ([4b9728f](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/4b9728fb32a1fa015844a90396c2b24d950130d8))
+* **modal:** theme command palette clear button ([d4da4ea](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/d4da4eabc64e458ddb32f16d097269ecad719417))
+* **sheet:** migrate to MWC token system ([a3d72a6](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/a3d72a6df530365bd2e576fafbead3076785e819))
+
+
+### Bug Fixes
+
+* **chip:** reset focus ring outward offset ([c43627d](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/c43627df859c18428535712577d57f16139f7c94))
+
 ## [1.7.2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.7.1...1.7.2) (2025-03-18)
 
 
