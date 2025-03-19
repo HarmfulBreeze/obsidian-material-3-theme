@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-material-3-theme",
-	"version": "1.8.0",
+	"version": "1.9.0",
 	"scripts": {
 		"build": "sass --load-path=node_modules --pkg-importer=node --no-source-map --style=compressed src/main.scss theme.css",
 		"generate-reference-palette": "tsx utils/generateReferencePalette.ts",

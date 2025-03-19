@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.9.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.8.0...1.9.0) (2025-03-19)
+
+
+### Features
+
+* **sheet:** add ripple ([aa90bc4](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/aa90bc431682a974973ecbf6f284772a8f52cd40))
+
+
+### Bug Fixes
+
+* **modal:** remove search bar bottom border ([cd84894](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/cd8489467afbf4e25069bf925233ff26d9ec543e))
+* **sheet:** change font roles inside the card ([07a57ed](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/07a57edbe1f2be541f70d98b95c17380379d1bb0))
+* use correct colors for custom icons ([7d3df6b](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/7d3df6b0f1fbaee4f66d4191eb05404630e2b870))
+
 ## [1.8.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.7.2...1.8.0) (2025-03-18)
 
 
