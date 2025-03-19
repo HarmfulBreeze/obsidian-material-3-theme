@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.1](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.9.0...1.9.1) (2025-03-19)
+
+
+### Bug Fixes
+
+* **ripple:** apply hover only on appropriate devices ([271f3a2](https://github.com/HarmfulBreeze/obsidian-material-3-theme/commit/271f3a2a384ead5637f283da9fc97ebd487eaf92))
+
 ## [1.9.0](https://github.com/HarmfulBreeze/obsidian-material-3-theme/compare/1.8.0...1.9.0) (2025-03-19)
 
 
